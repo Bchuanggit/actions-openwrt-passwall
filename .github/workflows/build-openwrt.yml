@@ -14,7 +14,7 @@ on:
     types: published
   push:
     branches:
-      - dev-lean-lede
+      - master
     paths:
       - '.config'
 #  schedule:
@@ -23,8 +23,8 @@ on:
     types: started
 
 env:
-  REPO_URL: https://github.com/Lienol/openwrt
-  REPO_BRANCH: dev-lean-lede
+  REPO_URL: https://github.com/project-openwrt/openwrt
+  REPO_BRANCH: master
   CONFIG_FILE: .config
   DIY_SH: diy.sh
   SSH_ACTIONS: true
